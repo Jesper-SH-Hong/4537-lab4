@@ -1,0 +1,36 @@
+body {
+    height: 100%;
+    width: 30vw;
+    background-color: #f2f2f2;
+}
+
+
+
+#updated-at {
+    text-align: right;
+}
+
+#definition-area {
+    margin-top: 10%;
+    width: 40vw;
+    height: 20vh;
+    border: #000 1px solid;
+}
+
+#definition-box {
+    width: 40vw;
+    height: 20vh;
+    border: #000 1px solid;
+}
+
+
+#submit-button {
+    background-color: green;
+        border-radius: 20%;
+        color: #FFF;
+        padding: 5px;
+        text-align: center;
+        font-size: 1em;
+        margin: 10%;
+        cursor: pointer;
+}
