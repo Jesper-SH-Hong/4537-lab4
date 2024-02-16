@@ -13,8 +13,8 @@ function formatDefinition(word, numRQ, def) {
   return word + "\n" + messages.requestNo + numRQ + "\n" + def;
 }
 
-function formatFailureMessage(word, failedMessage) {
-  return messages.trial + word + "\n\n" + failedMessage;
+function formatFailureMessage(word, numRQ, failedMessage) {
+  return messages.trial + word + "\n" + messages.requestNo + numRQ + "\n" + failedMessage;
 }
 
 function getRequest(word) {
@@ -34,7 +34,7 @@ function getRequest(word) {
         );
       } else {
         let response = JSON.parse(this.responseText);
-        definitionArea.innerText = formatFailureMessage(word, response.message);
+        definitionArea.innerText = formatFailureMessage(word, response.numberOfRequests, response.message);
       }
     };
   } else {
